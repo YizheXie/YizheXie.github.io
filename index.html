@@ -149,28 +149,34 @@ function showb(name, bibtex){
 
 }
 
-function addpaper(link, title, author, conference, year, bibtex, name, blockname, codelink, slides, blog, tweet) {
-  re = "<li><a href=" + link + " target=\"_blank\""+ ">" +title + "</a><br>" + author + "<br>" + conference + ' ' + year + ". "  
-  re += '<a href="javascript:showb(\''+ name + '\'' + ',\'' + bibtex + '\')">bibtex<\/a>'
+function addpaper(link, title, author, conference, conferenceLevel, year, bibtex, name, blockname, codelink, slides, blog, tweet) {
+  re = "<li><a href=" + link + " target=\"_blank\"" + ">" + title + "</a><br>" + author + "<br>" + conference + ' (<strong>' + conferenceLevel + '</strong>) ' + year + ". "; 
+  re += '<a href="javascript:showb(\''+ name + '\'' + ',\'' + bibtex + '\')">bibtex<\/a>';
+  
   if (codelink != null){
-    re += ' <a href=\"' + codelink + '\"' + ' style="color: navy;"" target=\"_blank\"' + '>code<\/a>'
+    re += ' <a href=\"' + codelink + '\"' + ' style="color: navy;" target=\"_blank\"' + '>code<\/a>';
   }
+  
   if (slides != null){
-    re += ' <a href=\"slides\/' + slides + '.pptx\"' + ' style="color: teal;" target=\"_blank\"' + '>slides(pptx)<\/a>' + ' '
-    re += '<a href=\"slides\/' + slides + '.pdf\"' + ' style="color: teal;" target=\"_blank\"' + '>slides(pdf)<\/a>' 
+    re += ' <a href=\"slides\/' + slides + '.pptx\"' + ' style="color: teal;" target=\"_blank\"' + '>slides(pptx)<\/a> ';
+    re += '<a href=\"slides\/' + slides + '.pdf\"' + ' style="color: teal;" target=\"_blank\"' + '>slides(pdf)<\/a>';
   }
+  
   if (blog != null){
-    re += ' <a href=\"' + blog + '\"' + 'style="color: fuchsia;" target=\"_blank\"' + '>blog<\/a>' + ' '
+    re += ' <a href=\"' + blog + '\"' + ' style="color: fuchsia;" target=\"_blank\"' + '>blog<\/a> ';
   }
+  
   if (tweet != null){
-    re += ' <a href=\"' + tweet + '\"' + 'style="color: fuchsia;" target=\"_blank\"' + '>tweet<\/a>' + ' '
+    re += ' <a href=\"' + tweet + '\"' + ' style="color: fuchsia;" target=\"_blank\"' + '>tweet<\/a> ';
   }
-  re += '<div id="' + name + '_bib"></div>'
-  re += '<\/li>'
-  re += '<br>'  
-  document.getElementById(blockname).innerHTML += re 
-
+  
+  re += '<div id="' + name + '_bib"></div>';
+  re += '<\/li>';
+  re += '<br>';
+  
+  document.getElementById(blockname).innerHTML += re;
 }
+
 
 // add papers
 bibtexstring = `null`.replace(/\n/g, '<br>')
@@ -178,6 +184,7 @@ addpaper("#",
          "Dynamic Privacy Protection with Large Language Model in Social Networks",
          "Yizhe Xie, Congcong Zhu, Xinyue Zhang, Xiangyu Hu and Xuan Liu", 
          "ICA3PP", 
+         "CCF-C",
          "2024", 
          bibtexstring,
          "dynamic_privacy_llm", 
