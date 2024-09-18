@@ -14,7 +14,8 @@
     <link rel="stylesheet" type="text/css" media="screen,print" href="css/style.css" />
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
   <link rel="icon" type="image/png" href="./images/logos/github.png">
-  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SprBG_FqTpCn5U6ocLiX8ABuld3cuk98s3BKYupIBwtQFIeHZVUdFyik5w8mFKoELfHOa3-sbK_miimlH_9jTw" charset="UTF-8"></script><style>
+  <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=SprBG_FqTpCn5U6ocLiX8ABuld3cuk98s3BKYupIBwtQFIeHZVUdFyik5w8mFKoELfHOa3-sbK_miimlH_9jTw" charset="UTF-8"></script>
+  <style>
   .button {
     background-color: #e7e7e7; color: black;/* Green */
     border: none;
@@ -37,10 +38,17 @@
 <img class="img-responsive" style="max-height:400px;" src="images/selfie.jpg"/>
 </div>
 
+<!-- Name -->
 <div class="col-sm-8">
 <div class="clearfix visible-xs-block"></div>
-<h1>Yizhe Xie <span style="font-family:STFangsong; font-size:20pt">(谢奕哲)</span></h1>
+<h1>
+    Yizhe Xie
+    <span style="font-family: STFangsong; font-size: 20pt; position: relative; top: -4px;">
+      (谢奕哲)
+    </span>
+  </h1>  
 
+<!-- Status -->
 <p style="font-size: 18px; line-height: 2; font-weight: normal;">
    <strong style="font-size: 18px;">Undergraduate of Data Science</strong><br>
    <span style="font-size: 18px;">Minzu University of China & CityU of Macau</span><br>
@@ -52,6 +60,7 @@
 </div>
 </div>
 
+<!-- Negotiation -->
 <hr/>
 <h4>
   <a href="#publications">Papers </a> /
@@ -61,6 +70,7 @@
 </h4>
 <hr/>
 
+<!-- biogrophy -->
 <h3 id="bio">About</h3>
 <p style="font-size: 18px; line-height: 1.4; font-weight: normal;">
     Hi! I am a year-two student pursuing a double degree at Minzu University of China and City University of Macau, currently supervised by <a href="https://fds.cityu.edu.mo/members/341">Congcong Zhu</a> at CityU of Macau. My research interests include large language model (LLM) safety, multi-agents reinforcement learning, LLM-MA and privacy protection.
@@ -70,10 +80,7 @@
 </div>
 
 
-
-
-
-
+<!-- Publications -->
 <h3 id="publications">Publications</h3>
 
 <h4>
@@ -101,7 +108,7 @@
   </ul>
 
 
-
+<!-- Programs & Column -->
 <h3 id="programs">Programs & Column</h3>
 <ul>
     <li>Easy-to-use Personal Academic Homepage.</li>
@@ -109,18 +116,17 @@
 
 
 
-
-
+<!-- Awards -->
 <h3 id="awards">Awards</h3>
 <ul>
     <li>2023-2024 Chinese National Scholarship</li>
 </ul>
 
 
-
+<!-- Team -->
 <h3 id="team">Group Member</h3>
 <ul>
-    <li><a href="https://williamleedawn.github.io/" target="_blank">Dongxiao Li</a>(Undergraduate.2023, MUC & CityU of Macau)</li>
+    <li><a href="https://williamleedawn.github.io/" target="_blank">Dongxiao Li </a> (Undergraduate.2023, MUC & CityU of Macau)</li>
 </ul>
 
 
@@ -144,9 +150,8 @@ function showb(name, bibtex){
 }
 
 function addpaper(link, title, author, conference, year, bibtex, name, blockname, codelink, slides, blog, tweet) {
-
   re = "<li><a href=" + link + " target=\"_blank\""+ ">" +title + "</a><br>" + author + "<br>" + conference + ' ' + year + ". "  
-  re += '<a href="javascript:showb(\''+ name + '\'' + ',\'' + bibtex + '\')">bib<\/a>'
+  re += '<a href="javascript:showb(\''+ name + '\'' + ',\'' + bibtex + '\')">bibtex<\/a>'
   if (codelink != null){
     re += ' <a href=\"' + codelink + '\"' + ' style="color: navy;"" target=\"_blank\"' + '>code<\/a>'
   }
@@ -167,20 +172,8 @@ function addpaper(link, title, author, conference, year, bibtex, name, blockname
 
 }
 
-var icml = 'ICML'
-var iclr = 'ICLR'
-var colt = 'COLT'
-var tacl = 'TACL'
-var acl = 'ACL'
-var stoc = 'STOC'
-var jmlr = 'JMLR'
-var neurips = 'NeurIPS'
-var aistats = 'AISTATS'
-var uai = 'UAI'
-var manu = 'Manuscript'
-
+// add papers
 bibtexstring = `null`.replace(/\n/g, '<br>')
-
 addpaper("#",
          "Dynamic Privacy Protection with Large Language Model in Social Networks",
          "Yizhe Xie, Congcong Zhu, Xinyue Zhang, Xiangyu Hu and Xuan Liu", 
@@ -193,8 +186,8 @@ addpaper("#",
          null, 
          null);
 
-bibtexstring = `null`.replace(/\n/g, '<br>')
 
+bibtexstring = `null`.replace(/\n/g, '<br>')
 addpaper("#",
          "Dynamic Privacy Protection with Large Language Model in Social Networks",
          "Yizhe Xie, Congcong Zhu, Xinyue Zhang, Xiangyu Hu and Xuan Liu", 
@@ -206,15 +199,6 @@ addpaper("#",
          null,
          null, 
          null);
-
-addpaper("template",
-         "",
-         "", 
-         neurips, 
-         "", 
-         bibtexstring,
-         "", 
-         '');
 
 </script>
 
