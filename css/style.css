@@ -1,0 +1,51 @@
+h1 {
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+}
+
+h2 {
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+h3 {
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 15.4px;
+}
+
+p {
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+ul li{
+    font-family: Lato;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+pre {
+    font-family: Lato;
+    overflow-x:hidden;
+    white-space:pre-wrap;
+}
