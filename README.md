@@ -2,7 +2,7 @@
 
 ## 00 Background
 
-GitHub provides each user with a subdomain `<user-id>.github.io`, and users can easily create their own homepage by setting up a repository named `<user-id>.github.io` and pushing static pages to the `master` branch. The homepage should be named `index.html`.
+GitHub provides each user with a subdomain `<user-id>.github.io`, and users can easily create their own homepage by setting up a repository named `<user-id>.github.io` and pushing static pages to the `main` / `master` branch. The homepage should be named `index.html`.
 
 ## 01 Creating the Repository
 
