@@ -1,7 +1,5 @@
 # Easy-to-use Personal Academic Homepage Template
 
-**Special Thanks**: This template was modified from Tengyu Ma's and Danqi Chen's.
-
 ## 00 Background
 
 GitHub provides each user with a subdomain `<user-id>.github.io`, and users can easily create their own homepage by setting up a repository named `<user-id>.github.io` and pushing static pages to the `master` branch. The homepage should be named `index.html`.
@@ -155,3 +153,5 @@ You can modify the research focus, team members, and contact details.
 ### 03 Publishing and Updating the Homepage
 
 After completing your homepage customization, remember to commit your changes to the `master` branch and push them to GitHub. Your page will automatically update in a few minutes. Visit `https://<your-username>.github.io` to see the latest version.
+
+**Special Thanks**: This template was modified from Tengyu Ma's and Danqi Chen's.
