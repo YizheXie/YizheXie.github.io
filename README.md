@@ -150,7 +150,7 @@ Finally, update the "Research Group" section with your own research team informa
 
 You can modify the research focus, team members, and contact details.
 
-### 03 Publishing and Updating the Homepage
+## 03 Publishing and Updating the Homepage
 
 After completing your homepage customization, remember to commit your changes to the `master` branch and push them to GitHub. Your page will automatically update in a few minutes. Visit `https://<your-username>.github.io` to see the latest version.
 
